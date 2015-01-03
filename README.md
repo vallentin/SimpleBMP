@@ -6,13 +6,9 @@ handling [BMP (Bitmap) image files](http://en.wikipedia.org/wiki/BMP_file_format
 
 ---
 
-
-
+SimpleBMP is a young library, so any feedback for improvements and/or missing features are welcome!
 
 ---
-
-hello-world
-===========
 
 
 
