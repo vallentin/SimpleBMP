@@ -37,4 +37,6 @@ int main(int argc, char *argv[])
 	}
 
 	bmp.save("gradient.bmp");
+	
+	return 0;
 }
