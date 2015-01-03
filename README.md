@@ -6,7 +6,16 @@ handling [BMP (Bitmap) image files](http://en.wikipedia.org/wiki/BMP_file_format
 
 ---
 
-SimpleBMP is a young library, so any feedback for improvements and/or missing features are welcome!
+*SimpleBMP is a young library, so any feedback for improvements and/or missing features are welcome!*
+
+---
+
+Why SimpleBMP? Looking at some of the current existing libraries for handling BMP files. Well, they were just
+cluttered and complex if you wanted to use them. BMP files are simple and they should have a simple library
+when dealing with them!
+
+SimpleBMP mainly has two functions `simplebmp_load()` and `simplebmp_save()`, a class is then built around those
+two functions.
 
 ---
 
