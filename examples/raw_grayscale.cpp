@@ -32,4 +32,6 @@ int main(int argc, char *argv[])
 	}
 
 	SimpleBMP::save(width, height, pixels, "output.bmp");
+	
+	return 0;
 }
