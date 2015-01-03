@@ -102,6 +102,16 @@ or
 bmp.glTexImage2D();
 ```
 
+#### Complete OpenGL Example
+
+```cpp
+GLuint texture_handle;
+glGenTextures(1, &texture_handle);
+glBindTexture(GL_TEXTURE_2D, texture_handle);
+
+bmp.glTexImage2D();
+```
+
 
 ## Error Codes
 
