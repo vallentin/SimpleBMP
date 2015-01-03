@@ -31,7 +31,6 @@ is built around those two functions.
 - Generating a Gradient
 - Apply Grayscale Effect to an Image
 - OpenGL
-- Save a Screenshot (Windows)
 - Error Codes
 
 But basically there are two general ways of using SimpleBMP.
