@@ -28,6 +28,12 @@ is built around those two functions.
 
 > **There are a lot of examples on how SimpleBMP can be used, in the "examples" directory!**
 
+- Generating a Gradient
+- Apply Grayscale Effect to an Image
+- OpenGL
+- Save a Screenshot (Windows)
+- Error Codes
+
 But basically there are two general ways of using SimpleBMP.
 
 *The following example, is for loading an image, applying the [grayscale effect](http://en.wikipedia.org/wiki/Grayscale) to the loaded image and then save it again!*
