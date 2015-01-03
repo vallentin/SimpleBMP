@@ -78,6 +78,28 @@ for (int i = 0; i < width; i++)
 bmp.save("output.bmp");
 ```
 
+# SimpleBMP + OpenGL
+
+SimpleBMP also has a simple wrapper function for use with OpenGL. But before you can use it, you need to define `SIMPLEBMP_OPENGL` before you include `simplebmp.h`.
+
+```cpp
+#define SIMPLEBMP_OPENGL
+#include "simplebmp\simplebmp.h"
+```
+
+Again you can both use it with or without having to instanciate a SimpleBMP object.
+
+```cpp
+SimpleBMP::glTexImage2D(width, height, pixels);
+```
+
+or
+
+```cpp
+bmp.glTexImage2D();
+```
+
+
 ## Error Codes
 
 The `save` and `load` functions, return error codes. It is guaranteed that `0 (SIMPLEBMP_NO_ERROR)` is returned when
