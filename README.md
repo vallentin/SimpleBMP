@@ -63,9 +63,9 @@ The second way, is where you use and instanciate a SimpleBMP object.
 SimpleBMP bmp;
 bmp.load("input.bmp");
 
-for (int i = 0; i < width; i++)
+for (int i = 0; i < bmp.width; i++)
 {
-	for (int j = 0; j < height; j++)
+	for (int j = 0; j < bmp.height; j++)
 	{
 		unsigned char red = 0, green = 0, blue = 0;
 
