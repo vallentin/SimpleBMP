@@ -30,6 +30,8 @@ is built around those two functions.
 
 But basically there are two general ways of using SimpleBMP.
 
+*The following example, is for loading an image, applying the [grayscale effect](http://en.wikipedia.org/wiki/Grayscale) to the loaded image and then save it again!*
+
 The first way is, where you store and maintain the `width, height` and `pixels`.
 
 ```cpp
