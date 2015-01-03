@@ -1,4 +1,6 @@
 
+# SimpleBMP
+
 SimpleBMP is a small, simple, self-contained and cross-platform library for loading, saving and
 handling [BMP (Bitmap) image files](http://en.wikipedia.org/wiki/BMP_file_format). 
 
@@ -10,12 +12,14 @@ handling [BMP (Bitmap) image files](http://en.wikipedia.org/wiki/BMP_file_format
 
 ---
 
-Why SimpleBMP? Looking at some of the current existing libraries for handling BMP files. Well, they were just
-cluttered and complex if you wanted to use them. BMP files are simple and they should have a simple library
-when dealing with them!
+## Why SimpleBMP?
 
-SimpleBMP mainly has two functions `simplebmp_load()` and `simplebmp_save()`, a class is then built around those
-two functions.
+Before making SimpleBMP I was looking for a simple and upfront library for loading and saving BMP files. The only
+thing that I found was cluttered and complex libraries. BMP files are and they should have a simple library, when
+having to deal with them!
+
+SimpleBMP mainly has two functions `simplebmp_load()` and `simplebmp_save()`. SimpleBMP then also offers a class which
+is built around those two functions.
 
 ---
 
