@@ -18,7 +18,7 @@ Before making SimpleBMP I was looking for a simple and upfront library for loadi
 thing that I found was cluttered and complex libraries. BMP files are and they should have a simple library, when
 having to deal with them!
 
-SimpleBMP mainly has two functions `simplebmp_load()` and `simplebmp_save()`. SimpleBMP then also offers a class which
+SimpleBMP mainly has two functions `SimpleBMP::load()` and `SimpleBMP::save()`. SimpleBMP then also offers a class which
 is built around those two functions.
 
 ---
@@ -77,6 +77,7 @@ for (int i = 0; i < width; i++)
 
 bmp.save("output.bmp");
 ```
+
 
 # SimpleBMP + OpenGL
 
