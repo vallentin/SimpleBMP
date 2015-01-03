@@ -1,3 +1,10 @@
+
+SimpleBMP is a small, simple and self-contained library for loading, saving and
+handling [BMP (Bitmap) image files](http://en.wikipedia.org/wiki/BMP_file_format). 
+
+
+---
+
 hello-world
 ===========
 
