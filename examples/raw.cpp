@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	// BMP's pixel format is BGR
 
 	const int width = 2;
-	const int height = 3;
+	const int height = 2;
 
 	// We need to mulitply by 3 as there are 3 color values per pixel!
 	const unsigned char pixels[width * height * 3] =
@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 	};
 
 	// test.bmp should then be saved in your project folder.
-	simplebmp_save(2, 2, pixels, "test.bmp");
+	simplebmp_save(width, height, pixels, "test.bmp");
 	
 	return 0;
 }
