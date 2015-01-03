@@ -1,4 +1,12 @@
 
+// Date Created: January 03, 2014
+// Last Modified: January 03, 2014
+// 
+// Author: Vallentin <mail@vallentinsource.com>
+// 
+// Github: https://github.com/VallentinSource/SimpleBMP
+
+
 #include "simplebmp\simplebmp.h"
 
 
