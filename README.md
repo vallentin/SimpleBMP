@@ -24,15 +24,69 @@ is built around those two functions.
 ---
 
 
+# Examples
 
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
+> **There are a lot of examples on how SimpleBMP can be used, in the "examples" directory!**
+
+But basically there are two general ways of using SimpleBMP.
+
+The first way is, where you store and maintain the `width, height` and `pixels`.
+
+```cpp
+int width = 0, height = 0;
+unsigned char *pixels = nullptr;
+
+SimpleBMP::load(&width, &height, &pixels, "input.bmp");
+
+for (int i = 0; i < width; i++)
+{
+	for (int j = 0; j < height; j++)
+	{
+		unsigned char red = 0, green = 0, blue = 0;
+
+		SimpleBMP::getPixel(width, height, pixels, i, j, &red, &green, &blue);
+
+		unsigned char gray = (red + green + blue) / 3;
+
+		SimpleBMP::setPixel(width, height, pixels, i, j, gray, gray, gray);
+	}
+}
+
+SimpleBMP::save(width, height, pixels, "output.bmp");
 ```
 
-- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
-- [x] list syntax required (any unordered or ordered list supported)
-- [x] this is a complete item
-- [ ] this is an incomplete item
+The second way, is where you use and instanciate a SimpleBMP object.
 
+```cpp
+SimpleBMP bmp;
+bmp.load("input.bmp");
+
+for (int i = 0; i < width; i++)
+{
+	for (int j = 0; j < height; j++)
+	{
+		unsigned char red = 0, green = 0, blue = 0;
+
+		bmp.getPixel(i, j, &red, &green, &blue);
+
+		unsigned char gray = (red + green + blue) / 3;
+
+		bmp.setPixel(i, j, gray, gray, gray);
+	}
+}
+
+bmp.save("output.bmp");
+```
+
+## Error Codes
+
+The `save` and `load` functions, return error codes. It is guaranteed that `0 (SIMPLEBMP_NO_ERROR)` is returned when
+no error has happened!
+
+```cpp
+#define SIMPLEBMP_NO_ERROR 0
+#define SIMPLEBMP_FOPEN_ERROR 1
+
+#define SIMPLEBMP_INVALID_SIGNATURE 2
+#define SIMPLEBMP_INVALID_BITS_PER_PIXEL 3
+```
