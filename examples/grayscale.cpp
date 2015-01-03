@@ -30,4 +30,6 @@ int main(int argc, char *argv[])
 	}
 
 	bmp.save("output.bmp");
+	
+	return 0;
 }
