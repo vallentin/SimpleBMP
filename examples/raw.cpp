@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 	};
 
 	// test.bmp should then be saved in your project folder.
-	simplebmp_save(width, height, pixels, "test.bmp");
+	SimpleBMP::save(width, height, pixels, "test.bmp");
 	
 	return 0;
 }
