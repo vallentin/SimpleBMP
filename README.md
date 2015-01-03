@@ -24,7 +24,7 @@ is built around those two functions.
 ---
 
 
-# Examples
+## Examples
 
 > **There are a lot of examples on how SimpleBMP can be used, in the "examples" directory!**
 
@@ -86,7 +86,7 @@ bmp.save("output.bmp");
 ```
 
 
-# SimpleBMP + OpenGL
+## SimpleBMP + OpenGL
 
 SimpleBMP also has a simple wrapper function for use with OpenGL. But before you can use it, you need to define `SIMPLEBMP_OPENGL` before you include `simplebmp.h`.
 
