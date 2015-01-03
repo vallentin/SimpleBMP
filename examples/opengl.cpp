@@ -13,14 +13,14 @@
 
 int main(int argc, char *argv[])
 {
-    SimpleBMP bmp;
-    bmp.load("texture.bmp");
-    
-    GLuint texture_handle;
-    glGenTextures(1, &texture_handle);
-    glBindTexture(GL_TEXTURE_2D, texture_handle);
-
-    bmp.glTexImage2D();
+	SimpleBMP bmp;
+	bmp.load("texture.bmp");
+	
+	GLuint texture_handle;
+	glGenTextures(1, &texture_handle);
+	glBindTexture(GL_TEXTURE_2D, texture_handle);
+	
+	bmp.glTexImage2D();
     
 	return 0;
 }
