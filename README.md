@@ -1,7 +1,7 @@
 
 # SimpleBMP
 
-SimpleBMP is a small, simple, self-contained and cross-platform library for loading, saving and
+SimpleBMP is a small, simple, self-contained and cross-platform C++ library for loading, saving and
 handling [BMP (Bitmap) image files](http://en.wikipedia.org/wiki/BMP_file_format). 
 
 *The only thing that SimpleBMP uses/requires is the standard library header `<fstream>`.*
