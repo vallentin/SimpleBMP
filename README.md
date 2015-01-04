@@ -26,12 +26,14 @@ is built around those two functions.
 
 ## Examples
 
-> **There are a lot of examples on how SimpleBMP can be used, in the "examples" directory!**
+> **There are a lot of examples on how SimpleBMP can be used, in
+> the ["examples" directory](https://github.com/VallentinSource/SimpleBMP/tree/master/examples)!**
 
-- Generating a Gradient
-- Apply Grayscale Effect to an Image
-- OpenGL
-- Error Codes
+- [Generating a Gradient](https://github.com/VallentinSource/SimpleBMP/blob/master/examples/gradient.cpp)
+- [Apply Grayscale Effect to an Image](https://github.com/VallentinSource/SimpleBMP/blob/master/examples/grayscale.cpp)
+- [OpenGL](https://github.com/VallentinSource/SimpleBMP/blob/master/examples/opengl.cpp)
+- [Error Codes](https://github.com/VallentinSource/SimpleBMP/blob/master/examples/error_codes.cpp)
+- [Packed RGB Values](https://github.com/VallentinSource/SimpleBMP/blob/master/examples/packed_rgb_values.cpp)
 
 But basically there are two general ways of using SimpleBMP.
 
