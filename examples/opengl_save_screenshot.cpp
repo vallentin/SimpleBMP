@@ -16,8 +16,8 @@
 
 int main(int argc, char *argv[])
 {
-    // You can't run this example just as it is
-    // as you need to initialize OpenGL, etc.
+	// You can't run this example just as it is
+	// as you need to initialize OpenGL, etc.
 
 	const char *path = "screenshot.bmp";
 
