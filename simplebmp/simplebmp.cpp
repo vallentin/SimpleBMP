@@ -1,6 +1,6 @@
 
 // Date Created: January 03, 2014
-// Last Modified: January 03, 2014
+// Last Modified: January 05, 2014
 // 
 // Author: Vallentin <mail@vallentinsource.com>
 // 
@@ -43,8 +43,8 @@ int SimpleBMP::save(const int width, const int height, const unsigned char *pixe
 		fwrite(bmp_file_header, 1, 14, file);
 		fwrite(bmp_info_header, 1, 40, file);
 
-		// for (int i = 0; i < height; i++)
-		for (int i = (height - 1); i >= 0; i--)
+		for (int i = 0; i < height; i++)
+		// for (int i = (height - 1); i >= 0; i--)
 		{
 			fwrite(pixels + (width * i * 3), 3, width, file);
 			fwrite(bmp_pad, 1, ((4 - (width * 3) % 4) % 4), file);
@@ -96,8 +96,8 @@ int SimpleBMP::load(int *width, int *height, unsigned char **pixels, const char 
 		unsigned char *p = new unsigned char[w * h * 3];
 
 
-		// for (int i = 0; i < height; i++)
-		for (int i = (h - 1); i >= 0; i--)
+		for (int i = 0; i < h; i++)
+		// for (int i = (h - 1); i >= 0; i--)
 		{
 			fread(p + (w * i * 3), 3, w, file);
 			fread(bmp_pad, 1, (4 - (w * 3) % 4) % 4, file);
@@ -121,16 +121,16 @@ int SimpleBMP::load(int *width, int *height, unsigned char **pixels, const char 
 
 void SimpleBMP::setPixel(const int width, const int height, unsigned char *pixels, const int x, const int y, const unsigned char red, const unsigned char green, const unsigned char blue)
 {
-	pixels[x * 3 + y * width * 3 + 2] = red;
-	pixels[x * 3 + y * width * 3 + 1] = green;
-	pixels[x * 3 + y * width * 3 + 0] = blue;
+	pixels[x * 3 + (height - y - 1) * width * 3 + 2] = red;
+	pixels[x * 3 + (height - y - 1) * width * 3 + 1] = green;
+	pixels[x * 3 + (height - y - 1) * width * 3 + 0] = blue;
 }
 
 void SimpleBMP::getPixel(const int width, const int height, const unsigned char *pixels, const int x, const int y, unsigned char *red, unsigned char *green, unsigned char *blue)
 {
-	if (red)   { (*red)   = pixels[x * 3 + y * width * 3 + 2]; }
-	if (green) { (*green) = pixels[x * 3 + y * width * 3 + 1]; }
-	if (blue)  { (*blue)  = pixels[x * 3 + y * width * 3 + 0]; }
+	if (red)   { (*red)   = pixels[x * 3 + (height - y - 1) * width * 3 + 2]; }
+	if (green) { (*green) = pixels[x * 3 + (height - y - 1) * width * 3 + 1]; }
+	if (blue)  { (*blue)  = pixels[x * 3 + (height - y - 1) * width * 3 + 0]; }
 }
 
 
