@@ -31,7 +31,8 @@ is built around those two functions.
 
 - [Generating a Gradient](https://github.com/VallentinSource/SimpleBMP/blob/master/examples/gradient.cpp)
 - [Apply Grayscale Effect to an Image](https://github.com/VallentinSource/SimpleBMP/blob/master/examples/grayscale.cpp)
-- [OpenGL](https://github.com/VallentinSource/SimpleBMP/blob/master/examples/opengl.cpp)
+- [OpenGL Load Texture](https://github.com/VallentinSource/SimpleBMP/blob/master/examples/opengl_load_texture.cpp)
+- [OpenGL Save Screenshot](https://github.com/VallentinSource/SimpleBMP/blob/master/examples/opengl_save_screenshot.cpp)
 - [Error Codes](https://github.com/VallentinSource/SimpleBMP/blob/master/examples/error_codes.cpp)
 - [Packed RGB Values](https://github.com/VallentinSource/SimpleBMP/blob/master/examples/packed_rgb_values.cpp)
 
@@ -118,6 +119,33 @@ glBindTexture(GL_TEXTURE_2D, texture_handle);
 
 bmp.glTexImage2D();
 ```
+
+## OpenGL Save Screenshot
+
+SimpleBMP also allows for an easy way to save a screenshot!
+
+```cpp
+const char *path = "screenshot.bmp";
+
+// The width and the height, would be the width
+// and height of your current scene.
+const int width = 1280;
+const int height = 720;
+
+SimpleBMP bmp(width, height);
+
+bmp.glReadPixels();
+
+if (!bmp.save(path))
+{
+	printf("Successfully Saved! <%s>\n", path);
+}
+else
+{
+	printf("Save Failed! <%s>\n", path);
+}
+```
+
 
 
 ## Error Codes
