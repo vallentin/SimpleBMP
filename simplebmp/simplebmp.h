@@ -1,6 +1,6 @@
 
 // Date Created: January 03, 2014
-// Last Modified: January 03, 2014
+// Last Modified: January 05, 2014
 // 
 // Author: Vallentin <mail@vallentinsource.com>
 // 
@@ -42,9 +42,19 @@ public:
 
 
 #ifdef SIMPLEBMP_OPENGL
+	static void glReadPixels(const int width, const int height, unsigned char *pixels)
+	{
+		::glReadPixels(0, 0, width, height, GL_BGR, GL_UNSIGNED_BYTE, pixels);
+	}
+
 	static void glTexImage2D(const int width, const int height, unsigned char *pixels)
 	{
 		::glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_BGR, GL_UNSIGNED_BYTE, pixels);
+	}
+
+	static void glTexImage2D(GLenum target, const int width, const int height, unsigned char *pixels)
+	{
+		::glTexImage2D(target, 0, GL_RGB, width, height, 0, GL_BGR, GL_UNSIGNED_BYTE, pixels);
 	}
 #endif
 
@@ -68,7 +78,12 @@ public:
 
 
 #ifdef SIMPLEBMP_OPENGL
-	void glTexImage2D(void) const
+	void glReadPixels(void)
+	{
+		::glReadPixels(0, 0, this->width, this->height, GL_BGR, GL_UNSIGNED_BYTE, this->pixels);
+	}
+
+	void glTexImage2D(GLenum target = GL_TEXTURE_2D) const
 	{
 		::glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, this->width, this->height, 0, GL_BGR, GL_UNSIGNED_BYTE, this->pixels);
 	}
@@ -101,6 +116,5 @@ public:
 
 	unsigned char* getPixels(void) const;
 };
-
 
 #endif
