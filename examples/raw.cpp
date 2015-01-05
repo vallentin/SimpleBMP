@@ -12,7 +12,8 @@
 
 int main(int argc, char *argv[])
 {
-	// BMP's pixel format is BGR
+	// BMP's pixel format is BGR and pixels are
+	// stored flipped around the x-axis
 
 	const int width = 2;
 	const int height = 2;
@@ -20,16 +21,16 @@ int main(int argc, char *argv[])
 	// We need to mulitply by 3 as there are 3 color values per pixel!
 	const unsigned char pixels[width * height * 3] =
 	{
-		// Pixel 0, 0 - Red
+		// Pixel 0, 1 - Red
 		0, 0, 255,
 
-		// Pixel 1, 0 - Green
+		// Pixel 1, 1 - Green
 		0, 255, 0,
 
-		// Pixel 0, 1 - Blue
+		// Pixel 0, 0 - Blue
 		255, 0, 0,
 
-		// Pixel 1, 1 - Purple
+		// Pixel 1, 0 - Purple
 		255, 0, 255,
 	};
 
