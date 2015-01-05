@@ -7,7 +7,6 @@
 // Github: https://github.com/VallentinSource/SimpleBMP
 
 
-#define SIMPLEBMP_OPENGL
 #include "simplebmp\simplebmp.h"
 
 #define _CRT_SECURE_NO_WARNINGS
