@@ -269,7 +269,7 @@ bool SimpleBMP::isValid(const int x, const int y) const
 }
 
 
-unsigned int SimpleBMP::getWidth(void) const { return this->width; }
-unsigned int SimpleBMP::getHeight(void) const { return this->height; }
+int SimpleBMP::getWidth(void) const { return this->width; }
+int SimpleBMP::getHeight(void) const { return this->height; }
 
 unsigned char* SimpleBMP::getPixels(void) const { return this->pixels; }
