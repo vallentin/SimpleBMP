@@ -16,6 +16,11 @@ int main(int argc, char *argv[])
 	// You can't run this example just as it is
 	// as you need to initialize OpenGL, etc.
     	
+	// Always remember that the texture must have
+	// a width and height of Power of Two
+	// 
+	// http://en.wikipedia.org/wiki/Power_of_two
+    	
 	SimpleBMP bmp;
 	bmp.load("texture.bmp");
 	
