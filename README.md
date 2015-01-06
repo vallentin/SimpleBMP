@@ -113,6 +113,11 @@ bmp.glTexImage2D();
 #### Complete OpenGL Example
 
 ```cpp
+// Always remember that the texture must have
+// a width and height of Power of Two
+// 
+// http://en.wikipedia.org/wiki/Power_of_two
+
 GLuint texture_handle;
 glGenTextures(1, &texture_handle);
 glBindTexture(GL_TEXTURE_2D, texture_handle);
