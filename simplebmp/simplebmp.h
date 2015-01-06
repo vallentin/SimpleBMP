@@ -111,8 +111,8 @@ public:
 	bool isValid(const int x, const int y) const;
 
 
-	unsigned int getWidth(void) const;
-	unsigned int getHeight(void) const;
+	int getWidth(void) const;
+	int getHeight(void) const;
 
 	unsigned char* getPixels(void) const;
 };
