@@ -1,10 +1,10 @@
 
 // Date Created: January 03, 2014
 // Last Modified: January 05, 2014
-// 
-// Author: Vallentin <mail@vallentinsource.com>
-// 
-// Github: https://github.com/VallentinSource/SimpleBMP
+//
+// Author: Vallentin <vallentin.source@gmail.com>
+//
+// Github: https://github.com/vallentin/SimpleBMP
 
 #ifndef SIMPLEBMP_H
 #define SIMPLEBMP_H
@@ -26,10 +26,10 @@ public:
 	static int save(const int width, const int height, const unsigned char *pixels, const char *path);
 
 	// Example:
-	// 
+	//
 	// int width = 0, height = 0;
 	// unsigned char *pixels = nullptr;
-	// 
+	//
 	// bool success = simplebmp_load(&width, &height, &pixels);
 	static int load(int *width, int *height, unsigned char **pixels, const char *path);
 
