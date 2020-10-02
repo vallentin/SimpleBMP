@@ -1,10 +1,10 @@
 
 // Date Created: January 03, 2014
 // Last Modified: January 03, 2014
-// 
-// Author: Vallentin <mail@vallentinsource.com>
-// 
-// Github: https://github.com/VallentinSource/SimpleBMP
+//
+// Author: Vallentin <vallentin.source@gmail.com>
+//
+// Github: https://github.com/vallentin/SimpleBMP
 
 
 #include "simplebmp\simplebmp.h"
@@ -36,6 +36,6 @@ int main(int argc, char *argv[])
 
 	// test.bmp should then be saved in your project folder.
 	SimpleBMP::save(width, height, pixels, "test.bmp");
-	
+
 	return 0;
 }

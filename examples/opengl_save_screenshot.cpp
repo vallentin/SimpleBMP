@@ -1,10 +1,10 @@
 
 // Date Created: January 05, 2014
 // Last Modified: January 05, 2014
-// 
-// Author: Vallentin <mail@vallentinsource.com>
-// 
-// Github: https://github.com/VallentinSource/SimpleBMP
+//
+// Author: Vallentin <vallentin.source@gmail.com>
+//
+// Github: https://github.com/vallentin/SimpleBMP
 
 
 #define SIMPLEBMP_OPENGL
@@ -38,8 +38,8 @@ int main(int argc, char *argv[])
 	{
 		printf("Save Failed! <%s>\n", path);
 	}
-	
+
 	getchar();
-    
+
 	return 0;
 }

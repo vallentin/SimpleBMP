@@ -2,7 +2,7 @@
 # SimpleBMP
 
 SimpleBMP is a small, simple, self-contained and cross-platform C++ library for loading, saving and
-handling [BMP (Bitmap) image files](http://en.wikipedia.org/wiki/BMP_file_format). 
+handling [BMP (Bitmap) image files](http://en.wikipedia.org/wiki/BMP_file_format).
 
 *The only thing that SimpleBMP uses/requires is the standard library header `<fstream>`.*
 
@@ -27,14 +27,14 @@ is built around those two functions.
 ## Examples
 
 > **There are a lot of examples on how SimpleBMP can be used, in
-> the ["examples" directory](https://github.com/VallentinSource/SimpleBMP/tree/master/examples)!**
+> the ["examples" directory](https://github.com/vallentin/SimpleBMP/tree/master/examples)!**
 
-- [Generating a Gradient](https://github.com/VallentinSource/SimpleBMP/blob/master/examples/gradient.cpp)
-- [Apply Grayscale Effect to an Image](https://github.com/VallentinSource/SimpleBMP/blob/master/examples/grayscale.cpp)
-- [OpenGL Load Texture](https://github.com/VallentinSource/SimpleBMP/blob/master/examples/opengl_load_texture.cpp)
-- [OpenGL Save Screenshot](https://github.com/VallentinSource/SimpleBMP/blob/master/examples/opengl_save_screenshot.cpp)
-- [Error Codes](https://github.com/VallentinSource/SimpleBMP/blob/master/examples/error_codes.cpp)
-- [Packed RGB Values](https://github.com/VallentinSource/SimpleBMP/blob/master/examples/packed_rgb_values.cpp)
+- [Generating a Gradient](https://github.com/vallentin/SimpleBMP/blob/master/examples/gradient.cpp)
+- [Apply Grayscale Effect to an Image](https://github.com/vallentin/SimpleBMP/blob/master/examples/grayscale.cpp)
+- [OpenGL Load Texture](https://github.com/vallentin/SimpleBMP/blob/master/examples/opengl_load_texture.cpp)
+- [OpenGL Save Screenshot](https://github.com/vallentin/SimpleBMP/blob/master/examples/opengl_save_screenshot.cpp)
+- [Error Codes](https://github.com/vallentin/SimpleBMP/blob/master/examples/error_codes.cpp)
+- [Packed RGB Values](https://github.com/vallentin/SimpleBMP/blob/master/examples/packed_rgb_values.cpp)
 
 But basically there are two general ways of using SimpleBMP.
 
@@ -115,7 +115,7 @@ bmp.glTexImage2D();
 ```cpp
 // Always remember that the texture must have
 // a width and height of Power of Two
-// 
+//
 // http://en.wikipedia.org/wiki/Power_of_two
 
 GLuint texture_handle;

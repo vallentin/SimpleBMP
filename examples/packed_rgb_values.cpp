@@ -1,10 +1,10 @@
 
 // Date Created: January 04, 2014
 // Last Modified: January 04, 2014
-// 
-// Author: Vallentin <mail@vallentinsource.com>
-// 
-// Github: https://github.com/VallentinSource/SimpleBMP
+//
+// Author: Vallentin <vallentin.source@gmail.com>
+//
+// Github: https://github.com/vallentin/SimpleBMP
 
 
 #define SIMPLEBMP_OPENGL
@@ -24,6 +24,6 @@ int main(int argc, char *argv[])
 	// const int rgb = bmp.getRGB(0, 0); // if we want to read it again (red)
 
 	bmp.save("output.bmp");
-	
+
 	return 0;
 }

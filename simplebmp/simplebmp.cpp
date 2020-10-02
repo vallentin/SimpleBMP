@@ -1,10 +1,10 @@
 
 // Date Created: January 03, 2014
 // Last Modified: January 05, 2014
-// 
-// Author: Vallentin <mail@vallentinsource.com>
-// 
-// Github: https://github.com/VallentinSource/SimpleBMP
+//
+// Author: Vallentin <vallentin.source@gmail.com>
+//
+// Github: https://github.com/vallentin/SimpleBMP
 
 #include "simplebmp.h"
 
@@ -189,7 +189,7 @@ int SimpleBMP::save(const char *path) const
 int SimpleBMP::load(const char *path)
 {
 	this->destroy();
-	
+
 	return SimpleBMP::load(&this->width, &this->height, &this->pixels, path);
 }
 
